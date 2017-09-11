@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><Document></Document></title>
+	<link rel='stylesheet' href='css/style.css'>
+	<style>
+		img{
+			width:200px;
+		}
+		div{
+			height:100px;
+			width:200px;
+			float:left;
+		}
+		.cl3{
+			background:url(images/k1.png);
+			border:2px solid green;
+		}
+		.cl4{
+			background:url(images/k2.png);
+			border:2px solid green;
+		}
+	</style>
+	<script src='js/jquery.js'></script>
+	<script>
+		$(document).ready(function(){
+			var key=true;
+			
+			$('#knp').click(function(){
+				if(key==true){
+						$('div#one').removeClass('cl3').addClass('cl4');
+						$('div#two').removeClass('cl4').addClass('cl3');
+					}else{
+						$('div#two').removeClass('cl3').addClass('cl4');
+						$('div#one').removeClass('cl4').addClass('cl3');
+					}	
+					key=!key;
+				
+			})
+			
+			
+		});
+		
+	</script>
+</head>
+<body>
+	<h2>jQuery від IT Claster</h2>
+	
+		<div id='one' class='cl3'></div>
+		<div id='two' class='cl4'></div>
+	<button id='knp'>Поміняти</button>	
+	
+	
+</body>
+</html>
