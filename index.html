@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>jQuery LR_2</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src='js/jquery.js'></script>
+
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".pane .delete").click(function(){
+					$(this).parents(".pane").animate({ opacity: "hide" }, "slow");
+				});
+
+		});
+	
+		</script>
+
+	
+	</head>
+
+	<body>
+		<h2>jQuery від IT Кластер</h2>
+		<div class="pane">
+			<h3>Sample heading</h3>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi malesuada, ante at feugiat tincidunt, enim massa gravida metus, commodo lacinia massa diam vel eros. Proin eget urna. Nunc fringilla neque vitae odio. Vivamus vitae ligula.</p>
+			<img class="delete" alt="delete" src="images/close.png" width='30'>
+		</div>
+		<div class="pane">
+			<h3>Sample heading</h3>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi malesuada, ante at feugiat tincidunt, enim massa gravida metus, commodo lacinia massa diam vel eros. Proin eget urna. Nunc fringilla neque vitae odio. Vivamus vitae ligula.</p>
+			<img class="delete" alt="delete" src="images/close.png" width='30'>
+		</div>
+		<div class="pane">
+			<h3>Sample heading</h3>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi malesuada, ante at feugiat tincidunt, enim massa gravida metus, commodo lacinia massa diam vel eros. Proin eget urna. Nunc fringilla neque vitae odio. Vivamus vitae ligula.</p>
+			<img class="delete" alt="delete" src="images/close.png" width='30'>
+		</div>
+
+
+	</body>
